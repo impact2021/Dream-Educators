@@ -94,15 +94,15 @@ function de_insert_default_educators() {
         ),
         array(
             'name'      => 'Jen',
-            'location'  => 'Central Auckland',
+            'location'  => 'Located in Central Auckland',
             'image_url' => 'https://dream.co.nz/wp-content/uploads/3-PROFILE-PICTURE-4-200x300.jpeg',
-            'bio'       => "Central Auckland\n\nKia Ora I'm Jen! I have been teaching in the ECE sector for 23 years, 15 of which I have been a home-based educator. This has been a fantastic experience and I have learnt a huge amount about the rewards and challenges of running my own business. The feedback I have had from many of my families shows my passion for the profession as well as the engaging learning environment, welcoming atmosphere, and comprehensive resources I have created during this time.",
+            'bio'       => "Located in Central Auckland\n\nKia Ora I'm Jen! I have been teaching in the ECE sector for 23 years, 15 of which I have been a home-based educator. This has been a fantastic experience and I have learnt a huge amount about the rewards and challenges of running my own business. The feedback I have had from many of my families shows my passion for the profession as well as the engaging learning environment, welcoming atmosphere, and comprehensive resources I have created during this time.",
         ),
         array(
             'name'      => 'Kim',
-            'location'  => 'Central Auckland',
+            'location'  => 'Located in Central Auckland',
             'image_url' => 'https://dream.co.nz/wp-content/uploads/Kim-200x300.jpg',
-            'bio'       => "Central Auckland\n\nI believe that all children should be treated with respect, in an environment that is safe, fun and where they are acknowledged as individuals.\n\nI provide an inclusive practice where all children, irrespective of gender, ethnicity, ability or background should have access to quality early childhood education managed with minimal stress throughout the transitions between home and school.\n\nI believe in creating strong relationships, working in partnership with parents/whanau and connecting to the wider community by providing opportunities to experience their place in it through attendance at Nearly Music, Play group, Library, Visits to MOTAT, The Zoo, Western Springs, Malls, Beaches and Parks. I incorporate the use of natural resources, recycling and discussions about current events as illustrations of respect for the environment. I utilise the public transport system which underpins my units on strategies and safety awareness.",
+            'bio'       => "Located in Central Auckland\n\nI believe that all children should be treated with respect, in an environment that is safe, fun and where they are acknowledged as individuals.\n\nI provide an inclusive practice where all children, irrespective of gender, ethnicity, ability or background should have access to quality early childhood education managed with minimal stress throughout the transitions between home and school.\n\nI believe in creating strong relationships, working in partnership with parents/whanau and connecting to the wider community by providing opportunities to experience their place in it through attendance at Nearly Music, Play group, Library, Visits to MOTAT, The Zoo, Western Springs, Malls, Beaches and Parks. I incorporate the use of natural resources, recycling and discussions about current events as illustrations of respect for the environment. I utilise the public transport system which underpins my units on strategies and safety awareness.",
         ),
     );
 

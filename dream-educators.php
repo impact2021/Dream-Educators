@@ -3,7 +3,7 @@
  * Plugin Name: Dream Educators
  * Plugin URI:  https://github.com/impact2021/Dream-Educators
  * Description: Displays a responsive grid of educator thumbnails with popup bios. Use the shortcode [dream_educators] on any page or post.
- * Version:     1.0.0
+ * Version:     1.1.0
  * Author:      Impact Websites
  * License:     GPL-2.0-or-later
  * Text Domain: dream-educators
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'DE_PLUGIN_VERSION', '1.0.0' );
+define( 'DE_PLUGIN_VERSION', '1.1.0' );
 define( 'DE_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'DE_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 

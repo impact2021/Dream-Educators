@@ -1,0 +1,148 @@
+/* Dream Educators Plugin Styles */
+
+/* Grid */
+.dream-educators-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 20px 0;
+    list-style: none;
+    margin: 0;
+}
+
+.dream-educators-grid .educator-card {
+    flex: 1 1 180px;
+    max-width: 220px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dream-educators-grid .educator-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.dream-educators-grid .educator-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.dream-educators-grid .educator-card .educator-name {
+    padding: 10px 8px 12px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+/* Modal overlay */
+.de-modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 99998;
+    overflow-y: auto;
+    padding: 30px 15px;
+}
+
+.de-modal-overlay.is-open {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Modal box */
+.de-modal-box {
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    max-width: 680px;
+    width: 100%;
+    padding: 32px 36px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+    margin: auto;
+    animation: deModalIn 0.2s ease;
+}
+
+@keyframes deModalIn {
+    from { opacity: 0; transform: translateY(-12px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.de-modal-box .de-modal-close {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    background: none;
+    border: none;
+    font-size: 1.6em;
+    line-height: 1;
+    cursor: pointer;
+    color: #888;
+    padding: 4px 8px;
+}
+
+.de-modal-box .de-modal-close:hover {
+    color: #333;
+}
+
+.de-modal-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.de-modal-header img {
+    width: 120px;
+    height: auto;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.de-modal-header-info {
+    flex: 1;
+}
+
+.de-modal-header-info h2 {
+    margin: 0 0 6px;
+    font-size: 1.5em;
+    color: #222;
+}
+
+.de-modal-header-info .de-modal-location {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0;
+}
+
+.de-modal-bio {
+    font-size: 0.95em;
+    line-height: 1.7;
+    color: #444;
+    white-space: pre-line;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .de-modal-box {
+        padding: 24px 20px;
+    }
+
+    .de-modal-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .de-modal-header img {
+        width: 100px;
+    }
+}

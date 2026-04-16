@@ -85,11 +85,17 @@ function de_shortcode_render() {
             $img_html = '<img src="' . esc_url( $image_url ) . '" alt="' . esc_attr( $name ) . '" loading="lazy">';
         }
 
+        $location_html = '';
+        if ( $location ) {
+            $location_html = '<p class="educator-location">' . esc_html( $location ) . '</p>';
+        }
+
         $cards_html .= sprintf(
-            '<div class="educator-card" role="button" tabindex="0" aria-haspopup="dialog" data-educator-id="%1$s">%2$s<p class="educator-name">%3$s</p></div>',
+            '<div class="educator-card" role="button" tabindex="0" aria-haspopup="dialog" data-educator-id="%1$s">%2$s<div class="educator-card-overlay"><p class="educator-name">%3$s</p>%4$s</div></div>',
             esc_attr( $post_id ),
             $img_html,
-            esc_html( $name )
+            esc_html( $name ),
+            $location_html
         );
     }
 

@@ -111,34 +111,28 @@
     color: #333;
 }
 
-.de-modal-header {
-    display: flex;
-    align-items: flex-start;
-    gap: 24px;
-    margin-bottom: 20px;
-}
-
-.de-modal-header img {
-    width: 120px;
-    height: auto;
-    border-radius: 4px;
-    flex-shrink: 0;
-}
-
-.de-modal-header-info {
-    flex: 1;
-}
-
-.de-modal-header-info h2 {
+.de-modal-name {
     margin: 0 0 6px;
     font-size: 1.5em;
     color: #222;
 }
 
-.de-modal-header-info .de-modal-location {
+.de-modal-location {
     font-size: 0.9em;
     color: #666;
-    margin: 0;
+    margin: 0 0 12px;
+}
+
+.de-modal-box #de-modal-img {
+    float: right;
+    width: 140px;
+    height: auto;
+    border-radius: 4px;
+    margin: 0 0 16px 20px;
+}
+
+.de-modal-clearfix {
+    clear: both;
 }
 
 .de-modal-bio {
@@ -154,13 +148,10 @@
         padding: 24px 20px;
     }
 
-    .de-modal-header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .de-modal-header img {
+    .de-modal-box #de-modal-img {
+        float: none;
+        display: block;
         width: 100px;
+        margin: 12px auto 16px;
     }
 }

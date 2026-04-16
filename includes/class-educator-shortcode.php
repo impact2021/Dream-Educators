@@ -76,7 +76,7 @@ function de_shortcode_render() {
         // Strip the location line from the start of the bio if it was embedded there.
         $bio_display = $bio;
         if ( $location && 0 === strpos( $bio, $location ) ) {
-            $bio_display = ltrim( substr( $bio, strlen( $location ) ) );
+            $bio_display = ltrim( substr( $bio, strlen( $location ) ), "\r\n" );
         }
 
         $modal_data[ $post_id ] = array(

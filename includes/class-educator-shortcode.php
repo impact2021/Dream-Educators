@@ -91,11 +91,10 @@ function de_shortcode_render() {
         }
 
         $cards_html .= sprintf(
-            '<div class="educator-card" role="button" tabindex="0" aria-haspopup="dialog" data-educator-id="%1$s">%2$s<div class="educator-card-overlay"><p class="educator-name">%3$s</p>%4$s</div></div>',
+            '<div class="educator-card" role="button" tabindex="0" aria-haspopup="dialog" data-educator-id="%1$s">%2$s<div class="educator-card-overlay"><p class="educator-name">%3$s</p></div></div>',
             esc_attr( $post_id ),
             $img_html,
-            esc_html( $name ),
-            $location_html
+            esc_html( $name )
         );
     }
 
@@ -111,14 +110,11 @@ function de_shortcode_render() {
 <div id="de-modal-overlay" class="de-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="de-modal-name">
     <div class="de-modal-box">
         <button id="de-modal-close" class="de-modal-close" aria-label="' . esc_attr__( 'Close', 'dream-educators' ) . '">&times;</button>
-        <div class="de-modal-header">
-            <img id="de-modal-img" src="" alt="" style="display:none;">
-            <div class="de-modal-header-info">
-                <h2 id="de-modal-name"></h2>
-                <p id="de-modal-location" class="de-modal-location"></p>
-            </div>
-        </div>
+        <h2 id="de-modal-name" class="de-modal-name"></h2>
+        <p id="de-modal-location" class="de-modal-location"></p>
+        <img id="de-modal-img" src="" alt="" style="display:none;">
         <div id="de-modal-bio" class="de-modal-bio"></div>
+        <div class="de-modal-clearfix"></div>
     </div>
 </div>';
 

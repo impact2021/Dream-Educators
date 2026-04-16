@@ -73,11 +73,17 @@ function de_shortcode_render() {
         $image_url = get_post_meta( $post_id, '_de_image_url', true );
         $bio       = get_post_meta( $post_id, '_de_bio', true );
 
+        // Strip the location line from the start of the bio if it was embedded there.
+        $bio_display = $bio;
+        if ( $location && 0 === strpos( $bio, $location ) ) {
+            $bio_display = ltrim( substr( $bio, strlen( $location ) ) );
+        }
+
         $modal_data[ $post_id ] = array(
             'name'     => $name,
             'location' => $location,
             'image'    => $image_url,
-            'bio'      => $bio,
+            'bio'      => $bio_display,
         );
 
         $img_html = '';
@@ -91,10 +97,11 @@ function de_shortcode_render() {
         }
 
         $cards_html .= sprintf(
-            '<div class="educator-card" role="button" tabindex="0" aria-haspopup="dialog" data-educator-id="%1$s">%2$s<div class="educator-card-overlay"><p class="educator-name">%3$s</p></div></div>',
+            '<div class="educator-card" role="button" tabindex="0" aria-haspopup="dialog" data-educator-id="%1$s">%2$s<div class="educator-card-overlay"><p class="educator-name">%3$s</p>%4$s</div></div>',
             esc_attr( $post_id ),
             $img_html,
-            esc_html( $name )
+            esc_html( $name ),
+            $location_html
         );
     }
 
